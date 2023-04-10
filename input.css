@@ -1,0 +1,167 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (max-width: 639px) {
+    .mainMenu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 40vh;
+        background-color: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(2px);
+        transition: top 0.3s ease-in;
+    }
+    .mainMenu ul {
+        margin: auto;
+    }
+    .mainMenu ul li a {
+        line-height: 50px;
+    }
+    .btn {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin: auto 0;
+    }
+    .closeMenu {
+        position: absolute;
+        top: 25px;
+        right: 35px;
+    }
+    
+}
+
+@media (min-width: 640px) and (max-width: 768px) {
+    .mainMenu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 50vh;
+        background-color: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(2px);
+        transition: top 0.3s ease-in; 
+    }
+    .mainMenu ul {
+        margin: auto;
+    }
+    .mainMenu ul li a {
+        line-height: 50px;
+    }
+    .btn {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin: auto 0;
+    }
+    .closeMenu {
+        position: absolute;
+        top: 25px;
+        right: 45px;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .mainMenu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 40vh;
+        background-color: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(2px);
+        transition: top 0.3s ease-in;
+    }
+    .mainMenu ul {
+        margin: auto;
+    }
+    .mainMenu ul li a {
+        line-height: 50px;
+    }
+    .btn {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin: auto 0;
+    }
+    .closeMenu {
+        position: absolute;
+        top: 25px;
+        right: 110px;
+    }
+}
+
+
+
+.glass {
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(8px);
+}
+
+.glass-smooth{
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(2px);
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.cover::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    background: black;
+    opacity: 0.2;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.ball {
+    overflow: hidden !important;
+}
+
+@media (min-width: 1023px) {
+    .social {
+        visibility: hidden;
+        z-index: 0;
+        transition-duration: .4s;
+        transition-delay: .2s;
+    }
+
+    .social-cont {
+        bottom: 60px;
+        transition-duration: .4s;
+        transition-delay: .1s;
+    }
+
+    .social-div:hover .social-cont {
+        bottom: 128px;
+    }
+
+    .social-div:hover .social {
+        visibility: visible;
+        z-index: 1;
+    }
+}
